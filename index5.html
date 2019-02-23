@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let vehicleName = 'Toyota';
+    vehicleName = 'Nizzan';
+    const COUNTRY ='Japan';
+
+    console.log(vehicleName);
+
+
+    function fetchUsers() {
+        return fetch('https://api.github.com/users')
+            .then(response => response.json());
+    }
+    fetchUsers().then(json => {
+        console.log(json);
+    });
+
+
+</script>
+
+</body>
+</html>
